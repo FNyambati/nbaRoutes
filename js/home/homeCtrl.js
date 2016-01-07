@@ -1,5 +1,8 @@
-var app = angular.module('nbaRoutes');
+angular.module('nbaRoutes').controller('homeCtrl', function ($scope, $stateParams, homeService, allData) {
 
-app.controller('homeCtrl', function ($scope, homeService) {
+    $scope.jazzData = allData['utahjazz'];
+    $scope.lakerData = allData['losangeleslakers'];
+    $scope.heatData = allData['miamiheat'];
+
 
 });
